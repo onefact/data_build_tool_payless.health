@@ -3,7 +3,7 @@ dbt_hospital_price_transparency:
   outputs:
     dev:
       type: duckdb
-      path: 'file_path/database_name.duckdb'
+      path: 's3://payless.health/hospital_price_transparency/hospital_price_sheets.parquet'
       extensions:
         - httpfs
         - parquet
