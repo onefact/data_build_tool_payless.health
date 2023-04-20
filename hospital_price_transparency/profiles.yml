@@ -1,0 +1,14 @@
+hospital_price_transparency:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      # path: 's3://payless.health/hospital_price_transparency/hospital_price_sheets.parquet'
+      path: '/tmp/hospital_price_transparency_ccn_column_names.parquet'
+      extensions:
+        - httpfs
+        - parquet
+      settings:
+        # s3_region: my-aws-region
+        # s3_access_key_id: "{{ env_var('S3_ACCESS_KEY_ID') }}"
+        # s3_secret_access_key: "{{ env_var('S3_SECRET_ACCESS_KEY') }}"
