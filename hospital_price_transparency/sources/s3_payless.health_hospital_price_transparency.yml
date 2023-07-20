@@ -1,6 +1,0 @@
-sources:
-  - name: CCN_010040
-    tables:
-      - name: flights
-        meta:
-          external_location: "read_csv('010040_631102774_Gadsden_standardcharges.csv', types={'FlightDate': 'DATE'}, names=['FlightDate', 'UniqueCarrier'])"

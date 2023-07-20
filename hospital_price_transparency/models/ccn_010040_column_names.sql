@@ -1,1 +1,0 @@
-SELECT * FROM read_csv('/tmp/out.csv')
