@@ -1,3 +1,4 @@
+-- Data from https://data.cms.gov/provider-data/dataset/xubh-q36u (Hospital General Information)
 {{ config(materialized='external', location='/tmp/hospital_general_information.parquet') }}
 SELECT * FROM read_csv('https://data.payless.health/data.cms.gov%2FHospital_General_Information.csv', 
     header=true, 
