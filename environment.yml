@@ -1,8 +1,0 @@
-name: dbt_hospital_price_transparency
-channels:
-  - defaults
-prefix: /opt/homebrew/anaconda3/envs/dbt_hospital_price_transparency
-dependencies:
-  - pip
-  - pip:
-    - -r requirements.txt
